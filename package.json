@@ -1,0 +1,25 @@
+{
+  "name": "todo_list",
+  "version": "1.0.0",
+  "description": "Projeto para elaboração de uma lista de tarefas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elielsondev/todo_list.git"
+  },
+  "author": "Elielson Nascimento <nascimento.elielson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elielsondev/todo_list/issues"
+  },
+  "homepage": "https://github.com/elielsondev/todo_list#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "vite": "^5.0.10"
+  },
+  "type": "module"
+}
