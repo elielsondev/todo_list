@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="./src/style.css">
     <title>Todo List - Lista de tarefas e compromissos</title>
 </head>
 <body>
-    <header class="container-lg">
+    <header id="container-header">
         <h1 class="text-center">Lista de Tarefas e Compromissos</h1>
     </header>
+
+    <main>
+        <!-- Aqui vai o formulário para adicionar uma nova tarefa -->
+        <div>
+            <label for="date">Data:
+                <input type="date" name="date" id="date" value="">
+            </label>
+            <label for="title-task">Título:
+                <input type="text" name="title-task" id="title-task" value="" required>
+            </label>
+            <button type="submit" id="save">Salvar tarefa</button>
+        </div>
+        <section>
+            <ul>
+                <li class="item-list">
+                    <span>26/12/2023</span>
+                    <p>Hoje é dia de desbarvar o mundo do front-end e conquistar a minha vaga</p>
+                    <div>
+                        <button type="submit" onclick="deleteTask(event)" id="delete">Excluir</button>
+                        <button type="submit" onclick="editTask(event)" id="edit">Editar</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
     <script type="module" src="./src/main.js"></script>
 </body>
 </html>
